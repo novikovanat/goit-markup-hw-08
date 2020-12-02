@@ -1,0 +1,25 @@
+.main-section {
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--dark-background-color);
+  height: 600px;
+  max-width: 1600px;
+  outline: 1px solid var(--black);
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
+    .common-button{
+  margin-top: 30px;
+  margin-left: 248px;
+}}

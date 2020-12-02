@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: getColor("dark-background-color");
+  color: getColor("gray");
+   .social-media-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+   .social-media-icon {
+    fill: getColor("white");
+  }
+
+}
+.social-media-footer {
+  margin-left: 70px;
+  margin-top: 12px;}
+.subscribe {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-top: 20px;
+}
+
+.footer-title {
+  display: inline-block;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: getColor("white");
+}
+
+.sent-icon {
+  fill: getColor("white");
+  vertical-align: middle;
+  margin-left: 10px;
+  @include transition(fill);
+
+
+.common-button:hover &,
+.common-button:focus & {
+  fill: getColor("accent-color")
+}}
+
+

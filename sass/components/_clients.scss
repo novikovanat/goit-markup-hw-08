@@ -1,0 +1,39 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-client {
+  fill: getColor("icon-color");
+  @include transition(fill);
+
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: getColor("accent-color");
+
+  }
+}
+
+.clients-link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid getColor("icon-color");
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition(border-color);
+
+
+  &:hover,
+  &:focus {
+    border-color: getColor("accent-color");
+  }
+}
+
+.icon-block:not(:last-child) {
+  margin-right: 30px;
+}
+
+

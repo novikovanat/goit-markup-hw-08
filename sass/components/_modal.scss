@@ -1,0 +1,128 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: getColor("white");
+  padding-top: 8px;
+  padding-right: 8px;
+
+  &-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: getColor("black");
+  }
+}
+
+.modal-button {
+  display: inline-flex;
+  margin-left: 490px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.close{
+  @include transition(fill);
+
+.modal-button:hover &{
+  fill: getColor("accent-color");
+}}
+
+
+.field {
+  display: block;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 12px;
+  position: relative;
+
+   textarea {
+    resize: none;
+    margin-right: 0;
+    height: 120px;
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+  }
+
+  .common-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.label-item {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.check-item{
+  display: block;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;}
+
+.icon-svg {
+  position: absolute;
+  transform: translate(70%, -160%);
+  @include transition(fill);
+
+
+
+.input-item:focus + &{
+  fill: getColor("accent-color")
+}}
+
+.checkbox-svg{
+  fill: getColor("white");
+  padding-top: 2px;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  border-radius: 3px;
+  border: 2px solid getColor("black");
+
+.checkbox:checked + &{
+  background-color: getColor("accent-color");
+  box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}}
+.conditions-link{
+  color: getColor("accent-color");
+}
+
+.input-item {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+@include transition(border);
+
+  &:focus {
+    outline: none;
+    border: 1px solid getColor("accent-color");
+  }}
