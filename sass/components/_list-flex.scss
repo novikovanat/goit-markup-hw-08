@@ -1,5 +1,18 @@
+/*
 .list-flex {
-  display: flex;
-  margin-bottom: 0;
-  justify-content: space-between;
+  display: block;
+}
+*/
+
+
+.list-flex {
+  @include size(tablet){
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  @include size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
