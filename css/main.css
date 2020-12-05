@@ -262,11 +262,6 @@ address {
   background-color: #ffffff;
 }
 
-/*
-.list-flex {
-  display: block;
-}
-*/
 @media (min-width: 768px) {
   .list-flex {
     display: flex;
@@ -353,7 +348,13 @@ address {
 }
 
 .gallery {
+  display: none;
   padding-bottom: 94px;
+}
+@media (min-width: 1200px) {
+  .gallery {
+    display: flex;
+  }
 }
 
 .gallery-item {
@@ -479,8 +480,31 @@ address {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-member:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .team-member:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-member:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .tm-photo {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .tm-photo {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .tm-photo {
+    width: 270px;
+  }
 }
 
 .section-title {
@@ -499,10 +523,15 @@ h1.section-title {
 }
 
 h2.section-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  h2.section-title {
+    font-size: 36px;
+  }
 }
 
 h3.section-title {
@@ -511,6 +540,11 @@ h3.section-title {
   font-size: 16px;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  h3.section-title {
+    text-align: center;
+  }
 }
 
 h4.section-title {

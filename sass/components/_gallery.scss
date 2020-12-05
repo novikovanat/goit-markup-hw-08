@@ -1,5 +1,9 @@
 .gallery {
+  display: none;
   padding-bottom: 94px;
+  @include size(desktop){
+    display: flex;
+  }
 }
 
 .gallery-item {

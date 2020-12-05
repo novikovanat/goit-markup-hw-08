@@ -13,10 +13,13 @@ h1.section-title {
 }
 
 h2.section-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  @include size(desktop){
+    font-size: 36px;
+  }
 }
 
 h3.section-title {
@@ -25,6 +28,9 @@ h3.section-title {
   font-size: 16px;
   margin-top: 30px;
   margin-bottom: 10px;
+
+  @include size(mobile-only)
+  {text-align: center}
 }
 
 h4.section-title {

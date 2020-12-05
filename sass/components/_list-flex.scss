@@ -1,10 +1,3 @@
-/*
-.list-flex {
-  display: block;
-}
-*/
-
-
 .list-flex {
   @include size(tablet){
     display: flex;
