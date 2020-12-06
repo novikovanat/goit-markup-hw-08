@@ -394,21 +394,55 @@ address {
 }
 
 .social-media-footer {
-  margin-left: 70px;
-  margin-top: 12px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .social-media-footer {
+    margin-left: 70px;
+    margin-top: 12px;
+    padding-bottom: 0;
+  }
 }
 
-.subscribe {
-  margin-left: 93px;
-  margin-top: 12px;
+@media (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscribe .common-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer-flex {
-  display: flex;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-flex {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .footer-contacts {
   margin-top: 20px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .footer-contacts {
+    padding-bottom: 0;
+  }
 }
 
 .footer-title {
@@ -575,8 +609,14 @@ h4.section-title {
 }
 
 .padding-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .padding-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter-button-block {
@@ -624,6 +664,7 @@ h4.section-title {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (min-width: 1200px) {
   .portfolio-list {
@@ -794,16 +835,26 @@ h4.section-title {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 0 0 0 16px;
-  margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+}
+@media (min-width: 480px) {
+  .email-subscribe {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .email-subscribe {
+    width: 370px;
+    margin-right: 12px;
+  }
 }
 .email-subscribe:-webkit-autofill, .email-subscribe:-webkit-autofill:hover, .email-subscribe:-webkit-autofill:focus {
   -webkit-text-fill-color: #ffffff;

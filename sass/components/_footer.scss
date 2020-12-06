@@ -12,21 +12,44 @@
   }
 
 }
-.social-media-footer {
-  margin-left: 70px;
-  margin-top: 12px;}
+.social-media-footer{
+  padding-bottom: 60px;
+  @include size(desktop) {
+    margin-left: 70px;
+    margin-top: 12px;
+    padding-bottom: 0
+  }
+}
+
 .subscribe {
+  @include size(desktop){
   margin-left: 93px;
   margin-top: 12px;
 }
+  .common-button{
+    @include size (tablet-only){
+  display:block;
+  margin-right: auto;
+  margin-left: auto;}}}
 
 .footer-flex {
-  display: flex;
-}
+  text-align: center;
+  @include size(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include size(desktop) {
+    display: flex;
+    text-align: left;
+}}
 
 .footer-contacts {
   margin-top: 20px;
-}
+  padding-bottom: 60px;
+  @include size(desktop){
+  padding-bottom: 0;
+}}
 
 .footer-title {
   display: inline-block;
