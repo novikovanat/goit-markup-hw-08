@@ -828,6 +828,7 @@ h4.section-title {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 @media (min-width: 480px) {
   .email-subscribe {
@@ -838,6 +839,7 @@ h4.section-title {
   .email-subscribe {
     width: 370px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .email-subscribe:-webkit-autofill, .email-subscribe:-webkit-autofill:hover, .email-subscribe:-webkit-autofill:focus {
