@@ -2,7 +2,7 @@
   color: getColor('black');}
 
 h1.section-title {
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   font-weight: 900;
   text-align: center;
@@ -10,6 +10,9 @@ h1.section-title {
   color: getColor('white');
   margin: 0 0;
   letter-spacing: 0.06em;
+  @include size(desktop){
+    font-size: 44px;
+  }
 }
 
 h2.section-title {

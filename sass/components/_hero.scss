@@ -1,25 +1,39 @@
 .main-section {
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--dark-background-color);
-  height: 600px;
-  max-width: 1600px;
+  width: 100%;
   outline: 1px solid var(--black);
   padding-top: 200px;
   padding-bottom: 280px;
   margin-left: auto;
   margin-right: auto;
+  @include size(desktop){
+    max-width: 1600px;
+  }
 }
 
+
 .hero {
-  width: 696px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @include size(mobile) {
+    width: 360px;
+  }
 
-    .common-button{
-  margin-top: 30px;
-  margin-left: 248px;
-}}
+  @include size(desktop) {
+    width: 696px;
+  }
+
+  .common-button {
+    margin-top: 30px;
+    margin-left: 80px;
+    @include size(desktop) {
+      margin-left: 248px;
+    }
+  }
+}
