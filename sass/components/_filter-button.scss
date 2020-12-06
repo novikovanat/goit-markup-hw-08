@@ -1,14 +1,18 @@
 
 .filter-button-block {
   display: flex;
-  width: 611px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  flex-wrap: wrap;
 
-.button-item:not(:last-child) {
-  margin-right: 8px;
+   @include size(tablet){
+    justify-content: center;
+  }
 }
+.button-item{
+  margin-top: 15px;
+
+  &:not(:last-child) {
+  margin-right: 8px;
+}}
 
 .filter-button {
   border-width: 0;

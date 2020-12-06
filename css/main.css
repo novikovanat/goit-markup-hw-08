@@ -581,11 +581,17 @@ h4.section-title {
 
 .filter-button-block {
   display: flex;
-  width: 611px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .filter-button-block {
+    justify-content: center;
+  }
 }
 
+.button-item {
+  margin-top: 15px;
+}
 .button-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -618,18 +624,31 @@ h4.section-title {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .portfolio-list {
+    margin-top: 20px;
+  }
 }
 
 .portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
 }
-.portfolio-item:not(:nth-child(3n+3)) {
-  margin-right: 30px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  .portfolio-item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
-.portfolio-item:nth-child(-n+6) {
-  margin-bottom: 30px;
+@media (min-width: 1200px) {
+  .portfolio-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  .portfolio-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 .portfolio-item .link:hover,
 .portfolio-item .link:focus {
@@ -641,6 +660,21 @@ h4.section-title {
 .no-overflow {
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 480px) {
+  .no-overflow .image {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .no-overflow .image {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .no-overflow .image {
+    width: 370px;
+  }
 }
 
 .description-box {
