@@ -664,7 +664,7 @@ h4.section-title {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (min-width: 1200px) {
   .portfolio-list {
@@ -674,22 +674,6 @@ h4.section-title {
 
 .portfolio-item {
   margin-top: 30px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-item {
-    flex-basis: calc(100% / 2 - 30px);
-  }
-  .portfolio-item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .portfolio-item {
-    flex-basis: calc(100% / 3 - 30px);
-  }
-  .portfolio-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
 }
 .portfolio-item .link:hover,
 .portfolio-item .link:focus {
