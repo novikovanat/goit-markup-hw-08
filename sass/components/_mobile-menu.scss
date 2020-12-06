@@ -1,0 +1,66 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: getColor("white");
+
+  .header-information-mobile &{
+    font-size: 18px;
+  }
+  &-navigation {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  &-button{
+    background-color: transparent;
+    border: none;}
+
+  &-contacts {
+    text-align: center;
+    padding-bottom: 60px;
+    }
+
+  .current::after{
+    width:66px;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }}
+
+.icon-mm {
+  fill: getColor("black");
+  @include transition(fill);
+
+  .mobile-menu-button:hover &,
+  mobile-menu-button:focus &
+  {
+    fill: getColor("accent-color");
+
+
+  }}
+
+.navigation-item{
+  margin-top: 40px;
+}
+.contacts-item:last-child{
+  margin-top: 16px;
+}
+
+
+.logo-icon {
+  display: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include size(mobile-only){
+  display: flex;
+    flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;}}
+

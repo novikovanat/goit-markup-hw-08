@@ -153,13 +153,18 @@ address {
 }
 
 .header-information {
+  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
   align-items: center;
   height: 80px;
+}
+@media (min-width: 768px) {
+  .header-information {
+    display: flex;
+  }
 }
 
 .navigation-box {
@@ -213,6 +218,72 @@ address {
 }
 .link:hover .icon-header, .link:focus .icon-header {
   fill: #2196f3;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.header-information-mobile .mobile-menu {
+  font-size: 18px;
+}
+.mobile-menu-navigation {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.mobile-menu-button {
+  background-color: transparent;
+  border: none;
+}
+.mobile-menu-contacts {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.mobile-menu .current::after {
+  width: 66px;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mobile-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.icon-mm {
+  fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-button:hover .icon-mm, mobile-menu-button:focus .icon-mm {
+  fill: #2196f3;
+}
+
+.navigation-item {
+  margin-top: 40px;
+}
+
+.contacts-item:last-child {
+  margin-top: 16px;
+}
+
+.logo-icon {
+  display: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .logo-icon {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-section {
@@ -824,7 +895,7 @@ h4.section-title {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   color: #2196f3;
 }
