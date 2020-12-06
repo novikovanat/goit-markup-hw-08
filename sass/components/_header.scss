@@ -50,10 +50,18 @@
 }
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
   li + li {
-    margin-left: 50px;
+    margin-top: 10px
+  }
+
+  margin-left: 50px;
+  @include size(desktop) {
+    display: flex;
+    margin-left: auto;
+    li + li {
+      margin-left: 50px;
+      margin-top: 0;
+    }
   }
 }
 

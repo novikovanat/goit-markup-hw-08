@@ -10,10 +10,6 @@ p {
   margin-bottom: 0;
 }
 
-*, ::before, ::after {
-  outline: solid red;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -199,11 +195,20 @@ address {
 }
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  margin-left: 50px;
 }
 .header-contacts li + li {
-  margin-left: 50px;
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  .header-contacts li + li {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 
 .icon-header {
@@ -225,6 +230,7 @@ address {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 5;
   background-color: #ffffff;
 }
 .header-information-mobile .mobile-menu {
@@ -234,6 +240,7 @@ address {
   padding-top: 20px;
   padding-bottom: 60px;
   text-align: center;
+  font-weight: 500;
 }
 .mobile-menu-button {
   background-color: transparent;
@@ -244,7 +251,7 @@ address {
   padding-bottom: 60px;
 }
 .mobile-menu .current::after {
-  width: 66px;
+  width: 15%;
   margin-top: 12px;
   margin-right: auto;
   margin-left: auto;
