@@ -4,6 +4,9 @@
   @include size(desktop){
     display: flex;
   }
+  .list-flex{
+    padding-top: 50px;
+  }
 }
 
 .gallery-item {

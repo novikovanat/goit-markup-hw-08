@@ -30,10 +30,10 @@
   }
 
   .common-button {
+    display: block;
     margin-top: 30px;
-    margin-left: 80px;
-    @include size(desktop) {
-      margin-left: 248px;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
-}
+    }
+

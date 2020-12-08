@@ -6,7 +6,8 @@
   background-color: getColor("white");
   padding-top: 8px;
   padding-right: 8px;
-  width: 80%;
+  padding-bottom: 40px;
+  width: 90%;
   box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
   @include size(mobile){
     width: 450px;
@@ -27,21 +28,18 @@
 }
 
 .modal-button {
-  display: inline-flex;
+  display: block;
+  margin-left: auto;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  @include size(mobile){
-  margin-left: 412px;}
-  @include size(desktop){
-    margin-left: 490px;
   }
-}
+
 
 .close{
+  vertical-align: middle;
   @include transition(fill);
 
 .modal-button:hover &{
@@ -70,7 +68,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+    }
 }
 
 .label-item {

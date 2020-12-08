@@ -112,7 +112,7 @@ address {
   text-decoration: none;
   color: inherit;
   transition-property: color;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover, .link:focus {
@@ -218,7 +218,7 @@ address {
   margin-right: 10px;
   vertical-align: text-bottom;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover .icon-header, .link:focus .icon-header {
@@ -264,10 +264,10 @@ address {
 .icon-mm {
   fill: #212121;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu-button:hover .icon-mm, mobile-menu-button:focus .icon-mm {
+.mobile-menu-button:hover .icon-mm, .mobile-menu-button:focus .icon-mm {
   fill: #2196f3;
 }
 
@@ -328,13 +328,10 @@ address {
   }
 }
 .hero .common-button {
+  display: block;
   margin-top: 30px;
-  margin-left: 80px;
-}
-@media (min-width: 1200px) {
-  .hero .common-button {
-    margin-left: 248px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .common-button {
@@ -351,7 +348,7 @@ address {
   border-width: 0;
   border-radius: 4px;
   transition-property: "background-color,color";
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .common-button:hover, .common-button:focus {
@@ -373,13 +370,20 @@ address {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features-item {
   box-sizing: border-box;
   width: 100%;
+  margin-top: 30px;
 }
 @media (min-width: 480px) {
   .features-item {
@@ -452,6 +456,9 @@ address {
   .gallery {
     display: flex;
   }
+}
+.gallery .list-flex {
+  padding-top: 50px;
 }
 
 .gallery-item {
@@ -556,7 +563,7 @@ address {
   vertical-align: middle;
   margin-left: 10px;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .common-button:hover .sent-icon, .common-button:focus .sent-icon {
@@ -576,7 +583,7 @@ address {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link:hover .social-media-icon, .social-media-link:focus .social-media-icon {
@@ -591,7 +598,7 @@ address {
   justify-content: center;
   border-radius: 50px;
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link:hover, .social-media-link:focus {
@@ -600,8 +607,14 @@ address {
 
 .section-team {
   background-color: var(--light-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-member {
@@ -611,6 +624,11 @@ address {
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1200px) {
+  .team-member {
+    margin-top: 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .team-member:nth-child(odd) {
@@ -663,7 +681,6 @@ h2.section-title {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
 }
 @media (min-width: 1200px) {
   h2.section-title {
@@ -755,7 +772,7 @@ h4.section-title {
   background: #f5f4fa;
   white-space: nowrap;
   transition-property: "background-color,color";
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover, .filter-button:focus {
@@ -819,7 +836,7 @@ h4.section-title {
   position: absolute;
   transform: translateY(100%);
   transition-property: transform;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item .link:hover .description-box {
@@ -840,14 +857,18 @@ h4.section-title {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
   justify-content: center;
+}
+@media (min-width: 1200px) {
+  .clients {
+    margin-top: 20px;
+  }
 }
 
 .icon-client {
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .icon-client, .clients-link:focus .icon-client {
@@ -863,7 +884,7 @@ h4.section-title {
   align-items: center;
   justify-content: center;
   transition-property: border-color;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
@@ -974,7 +995,8 @@ h4.section-title {
   background-color: #ffffff;
   padding-top: 8px;
   padding-right: 8px;
-  width: 80%;
+  padding-bottom: 40px;
+  width: 90%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 480px) {
@@ -998,28 +1020,19 @@ h4.section-title {
 }
 
 .modal-button {
-  display: inline-flex;
+  display: block;
+  margin-left: auto;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 }
-@media (min-width: 480px) {
-  .modal-button {
-    margin-left: 412px;
-  }
-}
-@media (min-width: 1200px) {
-  .modal-button {
-    margin-left: 490px;
-  }
-}
 
 .close {
+  vertical-align: middle;
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover .close {
@@ -1076,7 +1089,7 @@ h4.section-title {
   position: absolute;
   transform: translate(70%, -160%);
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-item:focus + .icon-svg {
@@ -1110,7 +1123,7 @@ h4.section-title {
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-item:focus {

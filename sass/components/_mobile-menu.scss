@@ -41,7 +41,7 @@
   @include transition(fill);
 
   .mobile-menu-button:hover &,
-  mobile-menu-button:focus &
+  .mobile-menu-button:focus &
   {
     fill: getColor("accent-color");
 
@@ -60,9 +60,11 @@
   display: none;
   padding-right: 15px;
   padding-left: 15px;
-  @include size(mobile-only){
-  display: flex;
+  @include size(mobile-only) {
+    display: flex;
     flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;}}
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
