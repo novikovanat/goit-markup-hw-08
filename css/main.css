@@ -112,7 +112,7 @@ address {
   text-decoration: none;
   color: inherit;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover, .link:focus {
@@ -218,7 +218,7 @@ address {
   margin-right: 10px;
   vertical-align: text-bottom;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover .icon-header, .link:focus .icon-header {
@@ -264,7 +264,7 @@ address {
 .icon-mm {
   fill: #212121;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-button:hover .icon-mm, .mobile-menu-button:focus .icon-mm {
@@ -369,7 +369,7 @@ address {
   border-width: 0;
   border-radius: 4px;
   transition-property: "background-color,color";
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .common-button:hover, .common-button:focus {
@@ -584,7 +584,7 @@ address {
   vertical-align: middle;
   margin-left: 10px;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .common-button:hover .sent-icon, .common-button:focus .sent-icon {
@@ -604,7 +604,7 @@ address {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link:hover .social-media-icon, .social-media-link:focus .social-media-icon {
@@ -619,7 +619,7 @@ address {
   justify-content: center;
   border-radius: 50px;
   transition-property: background-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link:hover, .social-media-link:focus {
@@ -793,7 +793,7 @@ h4.section-title {
   background: #f5f4fa;
   white-space: nowrap;
   transition-property: "background-color,color";
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover, .filter-button:focus {
@@ -857,7 +857,7 @@ h4.section-title {
   position: absolute;
   transform: translateY(100%);
   transition-property: transform;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item .link:hover .description-box {
@@ -889,7 +889,7 @@ h4.section-title {
 .icon-client {
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .icon-client, .clients-link:focus .icon-client {
@@ -905,7 +905,7 @@ h4.section-title {
   align-items: center;
   justify-content: center;
   transition-property: border-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
@@ -1053,7 +1053,7 @@ h4.section-title {
 .close {
   vertical-align: middle;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover .close {
@@ -1110,7 +1110,7 @@ h4.section-title {
   position: absolute;
   transform: translate(70%, -160%);
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-item:focus + .icon-svg {
@@ -1144,7 +1144,7 @@ h4.section-title {
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-item:focus {
