@@ -1,5 +1,5 @@
 .section-team {
-  background-color: var(--light-background-color);
+  background-color: getColor("light-background-color");
   padding-top: 60px;
   padding-bottom: 60px;
   @include size(desktop){
