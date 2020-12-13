@@ -25,12 +25,6 @@
   }
 
 
-  &:not(:last-child) {
-    @include size(desktop) {
-      margin-right: 30px;
-    }
-  }
-
 }
 .tm-photo{
   @include size(mobile){

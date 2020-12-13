@@ -381,12 +381,12 @@ address {
   .list-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
   .list-flex {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -411,7 +411,7 @@ address {
     width: 450px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .features-item {
     width: 354px;
   }
@@ -535,7 +535,7 @@ address {
     margin-top: 12px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .subscribe .common-button {
     display: block;
     margin-right: auto;
@@ -546,7 +546,7 @@ address {
 .footer-flex {
   text-align: center;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
@@ -651,13 +651,8 @@ address {
     margin-top: 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .team-member:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .team-member:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -983,7 +978,7 @@ h4.section-title {
 @media (min-width: 1200px) {
   .email-subscribe {
     width: 370px;
-    margin-right: 12px;
+    margin-right: 11px;
     margin-bottom: 0;
   }
 }

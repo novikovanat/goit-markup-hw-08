@@ -2,10 +2,10 @@
   @include size(tablet){
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     }
 
   @include size(desktop) {
     display: flex;
-    justify-content: space-between;
   }
 }
