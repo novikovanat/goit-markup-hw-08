@@ -8,7 +8,17 @@
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
 
+    window.addEventListener("orientationchange", function(event) {
+        closeModal();
+    });
+
     function toggleModal() {
         refs.modal.classList.toggle('is-hidden');
     }
+
+    function closeModal() {
+        refs.modal.classList.add('is-hidden');
+    }
+
+
 })();
